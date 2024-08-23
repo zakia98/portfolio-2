@@ -13,7 +13,7 @@ import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'www.ameenzaki.dev',
+  site: 'https://www.ameenzaki.dev',
   integrations: [expressiveCode(expressiveCodeOptions), tailwind({
     applyBaseStyles: false
   }), sitemap(), mdx(), icon()],
