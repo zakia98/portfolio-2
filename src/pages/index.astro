@@ -13,11 +13,21 @@ import selfPortrait from '../assets/self-portrait.jpg'
 import { getAllPosts, sortMDByDate } from '@/utils'
 
 const languages = ['Typescript', 'React', 'Node.js', 'SQL']
-const frontend = ['React', 'Sentry', 'Webpack', 'Gatsby', 'GraphQL', 'Chakra UI', 'Tailwind', 'Storybook', 'Bootstrap']
+const frontend = [
+	'React',
+	'Sentry',
+	'Webpack',
+	'Gatsby',
+	'GraphQL',
+	'Chakra UI',
+	'Tailwind',
+	'Storybook',
+	'Bootstrap'
+]
 const backend = ['Typescript', 'Node.JS', 'DynamoDB', 'PostgreSQL', 'GraphQL']
-const others = ["Fluent Japanese", "Requirements Gathering", "Architecting Solutions"];
+const others = ['Fluent Japanese', 'Requirements Gathering', 'Architecting Solutions']
 
-const hobbies = ['Cooking', 'Horror Movies', 'History', 'Webtoons', "Escape Rooms"]
+const hobbies = ['Cooking', 'Horror Movies', 'History', 'Webtoons', 'Escape Rooms']
 
 // const MAX_POSTS = 10
 // const allPosts = await getAllPosts()
@@ -36,7 +46,9 @@ const hobbies = ['Cooking', 'Horror Movies', 'History', 'Webtoons', "Escape Room
 
 			<div class='flex flex-col items-center gap-y-4'>
 				<h1 class='text-3xl font-bold'>Ameen Ahmed</h1>
-				<h2 class='text-md font-bold'>Fullstack Web Developer with a passion for software development</h2>
+				<h2 class='text-md font-bold'>
+					Fullstack Web Developer with a passion for software development
+				</h2>
 				<div class='flex flex-wrap justify-center gap-x-7 gap-y-3'>
 					<Label title='Fullstack Web Developer'>
 						<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' class='h-5 w-5' slot='icon'
@@ -46,7 +58,7 @@ const hobbies = ['Cooking', 'Horror Movies', 'History', 'Webtoons', "Escape Room
 							></path></svg
 						>
 					</Label>
-					<Label title='Toronto, ON, Canada'>
+					<Label title='London, UK'>
 						<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' class='h-5 w-5' slot='icon'
 							><path
 								fill='currentColor'
@@ -77,29 +89,30 @@ const hobbies = ['Cooking', 'Horror Movies', 'History', 'Webtoons', "Escape Room
 
 		<Section title='About'>
 			<p class='text-muted-foreground'>
-				Hey there! I'm a web developer based in London working for a healthcare tech startup as their lead developer, and am
-				experienced in building stable, robust, and scalable software solutions to change people's lives. I'm especially
-				experienced in React, Javascript, Node.js, NoSQL databases like DynamoDB, and traditional SQL databases like PostgreSQL.
+				Hey there! I'm a web developer based in London working for a healthcare tech startup as
+				their lead developer, and am experienced in building stable, robust, and scalable software
+				solutions to change people's lives. I'm especially experienced in React, Javascript,
+				Node.js, NoSQL databases like DynamoDB, and traditional SQL databases like PostgreSQL.
 			</p>
 			<p class='text-muted-foreground'>
-				I'm currently looking for new opportunities in the London area & across the UK.
-				Please reach out if you have any questions or would like to know more about me!
+				I'm currently looking for new opportunities in the London area & across the UK. Please reach
+				out if you have any questions or would like to know more about me!
 			</p>
 		</Section>
 
-		 <!--// {-->
-		 <!--// 	allPostsByDate.length > 0 && (-->
-			<!--// 	<Section title='Posts'>-->
-		 <!--// 			<ul class='flex flex-col gap-y-2'>-->
-		 <!--// 				{allPostsByDate.map((p) => (-->
-		 <!--// 					<li class='flex flex-col gap-x-2 sm:flex-row'>-->
-		 <!--// 						<PostPreview post={p} />-->
-		 <!--// 					</li>-->
-		 <!--// 				))}-->
-		 <!--// 			</ul>-->
-		 <!--// 		</Section>-->
-		 <!--// 	)-->
-		 <!--// }-->
+		<!--// {-->
+		<!--// 	allPostsByDate.length > 0 && (-->
+		<!--// 	<Section title='Posts'>-->
+		<!--// 			<ul class='flex flex-col gap-y-2'>-->
+		<!--// 				{allPostsByDate.map((p) => (-->
+		<!--// 					<li class='flex flex-col gap-x-2 sm:flex-row'>-->
+		<!--// 						<PostPreview post={p} />-->
+		<!--// 					</li>-->
+		<!--// 				))}-->
+		<!--// 			</ul>-->
+		<!--// 		</Section>-->
+		<!--// 	)-->
+		<!--// }-->
 		<Section title='Work Experience'>
 			<Card
 				heading='Fullstack Web Developer - Remote/London'
@@ -111,32 +124,37 @@ const hobbies = ['Cooking', 'Horror Movies', 'History', 'Webtoons', "Escape Room
 			>
 				<ul class='ml-4 list-disc text-muted-foreground'>
 					<li>
-					   Architected and implemented a high-throughput GraphQL and SQL-based payments system, processing
-					   £100,000+ weekly transactions, reducing processing time by 10 hours per week.
+						Architected and implemented a high-throughput GraphQL and SQL-based payments system,
+						processing £100,000+ weekly transactions, reducing processing time by 10 hours per week.
 					</li>
 					<li>
-    					Developed an event-driven synchronization system using DynamoDB streams and AWS Lambda, integrating
-                        platform data with Airtable to provide user analytics. This automation saved 100+ man-hours weekly across
-                        departments and boosted client retention by 20%.
+						Developed an event-driven synchronization system using DynamoDB streams and AWS Lambda,
+						integrating platform data with Airtable to provide user analytics. This automation saved
+						100+ man-hours weekly across departments and boosted client retention by 20%.
 					</li>
 					<li>
-    					Engineered a flexible React & Typescript based discount application system for client invoices, implementing
-                        complex business logic and security measures. This reduced manual processing time by 75% and minimized billing
-                        errors.
+						Engineered a flexible React & Typescript based discount application system for client
+						invoices, implementing complex business logic and security measures. This reduced manual
+						processing time by 75% and minimized billing errors.
 					</li>
 					<li>
-		                Designed and implemented a robust payment processor using Stripe API, handling £70,000+ weekly transactions
-						with 99.9% uptime and zero payment errors.
+						Designed and implemented a robust payment processor using Stripe API, handling £70,000+
+						weekly transactions with 99.9% uptime and zero payment errors.
 					</li>
 					<li>
-					    Led pair programming sessions to teach coding skills to colleagues on a regular basis.
+						Led pair programming sessions to teach coding skills to colleagues on a regular basis.
 					</li>
 					<li>
-               	        Understood problems and how to collect the necessary requirements to provide novel solutions to speed up
-                        department workflows.
+						Understood problems and how to collect the necessary requirements to provide novel
+						solutions to speed up department workflows.
 					</li>
 					<li>
-						Automated billing team workflows by 4 hours per week to reduce time spent creating optional extras for client invoices.
+						Contributed to the development of internal tools that automate repetitive tasks, saving
+						the development team an estimated 20 hours per week.
+					</li>
+					<li>
+						Created new pathways for members of the company to provide ideas on how we can improve
+						our product.
 					</li>
 				</ul>
 			</Card>
@@ -150,22 +168,26 @@ const hobbies = ['Cooking', 'Horror Movies', 'History', 'Webtoons', "Escape Room
 			>
 				<ul class='ml-4 list-disc text-muted-foreground'>
 					<li>
-						Developed the backend for a jobs board using Serverless, DynamoDB & Typescript, which allowed the sales team to scale closing deals by 22%.
+						Developed the backend for a jobs board using Serverless, DynamoDB & Typescript, which
+						allowed the sales team to scale closing deals by 22%.
 					</li>
 					<li>
-						Implemented a wrapper around DynamoDB databases using Zod to create a model that could guarantee data flowing in and
-						out was clean, allowing for fewer bugs, and faster development cycles.
+						Implemented a wrapper around DynamoDB databases using Zod to create a model that could
+						guarantee data flowing in and out was clean, allowing for fewer bugs, and faster
+						development cycles.
 					</li>
 					<li>
-						Leveraged observability & logging in our backend to ensure that when things break, the tech team is aware before users even report, allowing us to fix bugs quickly and ensure 99% uptime.
+						Leveraged observability & logging in our backend to ensure that when things break, the
+						tech team is aware before users even report, allowing us to fix bugs quickly and ensure
+						99% uptime.
 					</li>
 					<li>
-						Upgraded the authentication system to use refresh tokens and provide a seamless login experience, leading to
-						24% faster login times
+						Upgraded the authentication system to use refresh tokens and provide a seamless login
+						experience, leading to 24% faster login times
 					</li>
 					<li>
-						Improved various queries with the codebase, utilizing indexes and DynamoDB best practices to speed up page
-						loads by up to 30 seconds.
+						Improved various queries with the codebase, utilizing indexes and DynamoDB best
+						practices to speed up page loads by up to 30 seconds.
 					</li>
 				</ul>
 			</Card>
@@ -179,8 +201,7 @@ const hobbies = ['Cooking', 'Horror Movies', 'History', 'Webtoons', "Escape Room
 				imagePath='/src/assets/university.png'
 				altText='University'
 				imageClass='h-12 w-auto md:-left-16'
-			>
-			</Card>
+			/>
 		</Section>
 
 		<!--<Section title='Projects'>-->
@@ -231,9 +252,7 @@ const hobbies = ['Cooking', 'Horror Movies', 'History', 'Webtoons', "Escape Room
 			<SkillLayout title='Languages' skills={languages} />
 			<SkillLayout title='Frontend' skills={frontend} />
 			<SkillLayout title='Backend' skills={backend} />
-			{others && others.length > 0 && (
-				<SkillLayout title='Others' skills={others} />
-			)}
+			{others && others.length > 0 && <SkillLayout title='Others' skills={others} />}
 		</Section>
 
 		<Section title='Interests & hobbies'>
